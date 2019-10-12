@@ -4,3 +4,9 @@ Goals:
 	-polymorphism
 	-inheritiance
 	-javaFX (last)
+
+superclass--holes-- => subclasses--bomb//mole
+
+## holes will always do something to points/life/whatever, but
+depending on the subclasses--bomb//mole, then it'll do certain
+things to the points/life/whatever according to that class ##
