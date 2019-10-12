@@ -1,0 +1,6 @@
+Project Notes, October 12, 2019
+
+Goals:
+	-polymorphism
+	-inheritiance
+	-javaFX (last)
