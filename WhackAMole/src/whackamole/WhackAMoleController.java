@@ -1,6 +1,8 @@
 package whackamole;
 
 import java.io.File;
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -11,6 +13,9 @@ import javafx.scene.image.Image;
 
 public class WhackAMoleController {
 
+    private static final DecimalFormat scoreFormat = new DecimalFormat("#");
+    private static int score;
+    
     @FXML
     private ImageView hole1_1;
 
@@ -46,6 +51,9 @@ public class WhackAMoleController {
 
     @FXML
     private Button pauseButton;
+    
+    @FXML
+    private TextField highScoreTextView;
 
      
     @FXML
@@ -53,21 +61,39 @@ public class WhackAMoleController {
         File file = new File("src/hole.png");
         Image image = new Image(file.toURI().toString());
         hole1_1.setImage(image);
-    }
-   
+        score += 5;
+        scoreTextView.setText(scoreFormat.format(score));
+        File file2 = new File("src/moleInHole.png");
+        Image image2 = new Image(file2.toURI().toString());
+        hole2_2.setImage(image2);
+    }  
     
+    @FXML
+    void onHole1_2Clicked(ActionEvent event){
+        
+    }
+    
+    @FXML
+    void onHole2_2Clicked(ActionEvent event){
+        File file = new File("src/hole.png");
+        Image image = new Image(file.toURI().toString());
+        hole2_2.setImage(image);
+        score += 5;
+        scoreTextView.setText(scoreFormat.format(score));
+        File file2 = new File("src/moleInHole.png");
+        Image image2 = new Image(file2.toURI().toString());
+        hole3_1.setImage(image2);
+    }
     
     @FXML
     void onPauseButtonClick(ActionEvent event) { 
-
-        
+     
     }
-
-    
+ 
     @FXML
     void onStartButtonClick(ActionEvent event) {
         
-        //Initializes the holes
+        //Initializes the holes / sets the score to 0
         File file = new File("src/hole.png");
         File file2 = new File("src/moleInHole.png");
         Image image = new Image(file.toURI().toString());
@@ -81,6 +107,7 @@ public class WhackAMoleController {
         hole3_1.setImage(image);
         hole3_2.setImage(image);
         hole3_3.setImage(image);
+        scoreTextView.setText("0");
         
         
     }
