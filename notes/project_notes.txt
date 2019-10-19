@@ -3,6 +3,8 @@ Project Notes, October 12, 2019
 Goals:
 	-polymorphism
 	-inheritiance
+		-abstract? 
+			=> VIEW CADE'S EXAMPLE
 	-javaFX (last)
 
 superclass--holes-- => subclasses--bomb//mole
@@ -10,3 +12,45 @@ superclass--holes-- => subclasses--bomb//mole
 ## holes will always do something to points/life/whatever, but
 depending on the subclasses--bomb//mole, then it'll do certain
 things to the points/life/whatever according to that class ##
+
+QUESTIONS:
+	** How to connect Controller.java to Mechanics/Backend.java ? **
+
+
+
+October 18, 2019
+	Hole => interface
+		bombs / mole => classes for implements/inheritiance
+
+
+
+	Mechanics:
+		- Keeping Track of Players' Score
+			- very similar to arcade games
+			- needs some .java stuff
+
+		- Mole and Bombs Classes
+			- Only choose bombs or mole
+			-if choose bomb, points are deducted
+			- 50/50 for bomb or mole to pop up in hole
+			- Within inheritance tree, add frequency of objects
+			- How long they last in the hole
+
+		- Points	
+			- 0 points starts off (default)
+			- on click bombs deduct 10 points
+			- on click mole add 5 points
+				- on click on mole in sequence adds extra points
+				- on click on special mole adds more points 
+			- WILL BE AFFECTED BY FREQUENCY OF BOMB APPEARANCE
+
+		- Game Structure
+			- 60 sec max game time (default)
+			- future: add levels for variety of time & points
+
+	Views:
+		- In-Game View
+		- Score Board View
+			- or just have a list on the side?
+		
+
