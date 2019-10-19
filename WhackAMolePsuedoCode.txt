@@ -1,0 +1,185 @@
+
+
+=======================================================================================================================================
+= HOLE INTERFACE =
+===================
+
+
+public interface Spot(){
+	
+	<type> location;
+	int scoreValue;
+	double duration;
+
+	public double getScoreValue(){}
+
+	public int getDuration(){}
+
+}
+
+
+=======================================================================================================================================
+= MOLE CLASS =
+==============
+
+
+public class Mole implements Spot(){
+
+	<type> location;
+	scoreValue = 5;
+	duration = 1;  //this value might change depending on how we program the timer
+
+	public Mole()super(){
+
+	}
+
+	@Override
+	public double getScoreValue(){
+		return scoreValue;
+	}
+
+	@Override
+	public int getDuration(){
+		return duration;
+	}
+	
+}
+
+
+=======================================================================================================================================
+= SPECIAL MOLE CLASS =
+======================
+
+
+public class SpecialMole extends Mole(){
+
+	<type> location;
+	scoreValue = 10;  //will determine this value later
+	duration = 0.25;  //this value might change depending on how we program the timer
+
+	public SpecialMole()super(){
+
+	}
+
+	@Override
+	public double getScoreValue(){
+		return scoreValue;
+	}
+
+	@Override
+	public int getDuration(){
+		return duration;
+	}
+	
+}
+
+
+=======================================================================================================================================
+= BOMB CLASS =
+==============
+
+
+public class Bomb implements Spot(){
+
+	<type> location;
+	scoreValue = -10;
+	duration = 1;  //this value might change depending on how we program the timer
+
+	public Bomb()super(){
+
+	}
+
+	@Override
+	public double getScoreValue(){
+		return scoreValue;
+	}
+
+	@Override
+	public int getDuration(){
+		return duration;
+	}
+	
+}
+
+
+=======================================================================================================================================
+= WHACK-A-MOLE CONSTRUCTOR =
+============================
+
+
+private int time;
+private int score;
+private int highScore;
+DecimalFormat scoreFormat = new DecimalFormat("#");  //maybe this can be changed to NumberFormat?
+
+@FXML
+private TextField scoreTextView;
+...
+private Button pauseButton; //make this unclickable by default until a game is started
+
+public void startTimer(); //make this
+
+	int timeRemaining;
+
+	//make a timer that decrements the 'time' instance variable by 1 each second (not sure how to do that yet).
+	//will also need to decrement the text in the 'timeTextView' text field (<-- need to create that TextField still)
+	//when the timer reaches zero, call the gameEnded() method.
+
+	//this will also need a variable 'gameTime' that will change depending on the player's selection (60sec? 120sec? 30sec?).
+	//use the 'timeRemaining' variable to keep track of the remaining time in case the player pauses the game.
+}
+
+public void gameEnded(){
+	//check to see if the player's 'score' is higher than the current 'highScore'.
+	//if so, change the current 'highScore' equal to the player's 'score'.
+	//make the startButton clickable again and the pauseButton unclickable again.
+
+}
+
+@FXML
+void onStartButtonClick(Event){	
+	//initialize the holes
+	//make the pauseButton clickable
+	
+	scoreTextView = (format.scoreFormat(score));  //sets the score to 0
+
+	startTimer(); //make this happen somehow
+
+	Random rand = new Random();
+	Mole mole = new Mole();
+	SpecialMole spMole = new SpecialMole();
+	Bomb bomb = new Bomb();
+
+	//use if statements and/or switch blocks to randomize if a mole, special mole, or bomb appears.
+	//also randomize which spot the mole/spMole/bomb appears in.
+
+	//make the Start Button unclickable after being clicked once.
+}
+
+@FXML
+void onPauseButtonClick(Event){
+	//stop the timer
+	//make a Resume Button appear (maybe make it replace the Start Button?)
+	//make a Quit Button appear (make it replace the Start Button instead and put Resume Button elsewhere?)
+
+}
+
+@FXML
+void onHole1_1Clicked(Event){
+...
+void onHole3_3Clicked(Event){
+	//use an if statement to see if there is a mole/spMole/bomb in the spot.
+	//increase or decrease the score accordingly (maybe make a 'getScoreValue' method for the Spot objects?)
+
+}
+
+
+=======================================================================================================================================
+
+
+Polymorphism
+- the  "for(Employee currentEmployee : employees){"  loop processed the employees polymorphically because all of the employees in the
+array, depite being different types of employees (i.e., Salaried, Commission, etc.), were instantiated as Employees (which
+was an Abstract class) to begin with
+- same for the ShapesHierarchy loop, except it was because the shapes were instantiated as Shapes, which was an Interface.
+
