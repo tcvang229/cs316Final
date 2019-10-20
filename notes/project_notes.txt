@@ -1,3 +1,7 @@
+Other Important Information:
+- draw.io is the URL to the web-app that is used to draw the UML
+
+
 Project Notes, October 12, 2019
 
 Goals:
