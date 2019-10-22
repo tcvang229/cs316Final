@@ -1,6 +1,6 @@
 package whackamole;
 
-public class Bomb implements Hole {
+public class Bomb extends Hole {
 
     @Override
     public int roll() {

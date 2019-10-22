@@ -1,7 +1,7 @@
 package whackamole;
 
-public class SpecialMole implements Hole {
-    
+public class SpecialMole extends Mole {
+
     public SpecialMole() {
     }
 

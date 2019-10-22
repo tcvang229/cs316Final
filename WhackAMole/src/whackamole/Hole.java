@@ -1,6 +1,6 @@
 package whackamole;
 
-public interface Hole {
+public abtract class Hole {
     public int roll();
     public void showObject();
 }

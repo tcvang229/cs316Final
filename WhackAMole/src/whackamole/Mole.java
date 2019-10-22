@@ -2,7 +2,7 @@ package whackamole;
 //import java.Math.random;
 
 
-public class Mole implements Hole {
+public class Mole extends Hole {
 
     @Override
     public int roll() {
