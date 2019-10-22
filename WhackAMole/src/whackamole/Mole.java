@@ -12,5 +12,6 @@ public class Mole implements Hole {
 
     @Override
     public void showObject() {
+        
     }
 }

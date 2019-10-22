@@ -105,10 +105,19 @@
                   </TextField>
                   <Label text="High Score:" textFill="WHITE" GridPane.rowIndex="5" />
                </children>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
             </GridPane>
             <GridPane GridPane.columnIndex="2" GridPane.rowIndex="1">
               <columnConstraints>
                 <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints />
               </columnConstraints>
                <children>
                   <Label text="Score:" textFill="WHITE" />
@@ -118,9 +127,18 @@
                      </GridPane.margin>
                   </TextField>
                </children>
+               <rowConstraints>
+                  <RowConstraints />
+               </rowConstraints>
             </GridPane>
             <Button mnemonicParsing="false" onAction="#onHole1_2Clicked" opacity="0.0" prefHeight="144.0" prefWidth="266.0" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="2" />
             <Button mnemonicParsing="false" onAction="#onHole2_2Clicked" opacity="0.0" prefHeight="146.0" prefWidth="260.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#onHole1_3Clicked" opacity="0.0" prefHeight="146.0" prefWidth="198.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#onHole2_1Clicked" opacity="0.0" prefHeight="148.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" opacity="0.0" prefHeight="146.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#onHole3_1Clicked" opacity="0.0" prefHeight="146.0" prefWidth="198.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#onHole3_2Clicked" opacity="0.0" prefHeight="146.0" prefWidth="268.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#onHole3_3Clicked" opacity="0.0" prefHeight="146.0" prefWidth="197.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
          </children>
       </GridPane>
    </children>

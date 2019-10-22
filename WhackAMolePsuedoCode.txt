@@ -103,7 +103,7 @@ public class Bomb implements Spot(){
 
 
 =======================================================================================================================================
-= WHACK-A-MOLE CONSTRUCTOR =
+= WHACK-A-MOLE CONTROLLER =
 ============================
 
 
@@ -117,7 +117,7 @@ private TextField scoreTextView;
 ...
 private Button pauseButton; //make this unclickable by default until a game is started
 
-public void startTimer(); //make this
+public void startTimer(){
 
 	int timeRemaining;
 
@@ -127,6 +127,7 @@ public void startTimer(); //make this
 
 	//this will also need a variable 'gameTime' that will change depending on the player's selection (60sec? 120sec? 30sec?).
 	//use the 'timeRemaining' variable to keep track of the remaining time in case the player pauses the game.
+
 }
 
 public void gameEnded(){
