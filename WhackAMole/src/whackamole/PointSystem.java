@@ -1,4 +1,6 @@
 package whackamole;
 
-public class PointSystem {    
+public abstract class PointSystem {  
+	
+	
 }
