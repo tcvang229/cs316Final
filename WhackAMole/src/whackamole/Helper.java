@@ -2,17 +2,16 @@ package whackamole;
 import java.util.TimerTask;
 
 public class Helper extends TimerTask{
-	public static int y;
 
 	@Override
 	public void run() {
-		this.y = 1;
-                        hole2_3.setImage(moleInHoleImage);
-            	
-            	
+                WhackAMoleController.km.setImage(WhackAMoleController.holeImage);
+                WhackAMoleController.kb.setImage(WhackAMoleController.holeImage);
+                WhackAMoleController.ks.setImage(WhackAMoleController.holeImage);
+                WhackAMoleController.moleIn = false;
+                WhackAMoleController.bombIn = false;
+                WhackAMoleController.spMoleIn = false;
+                System.out.println("Timer Finished\n");
 	}
-	
-	public static int getY() {
-		return y;
-	}
+        
 }
