@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="whackamole.WhackAMoleController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-background-color: green; -fx-border-color: black;" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="whackamole.WhackAMoleController">
    <children>
       <GridPane layoutX="10.0" layoutY="10.0" style="-fx-background-color: green;">
          <columnConstraints>
