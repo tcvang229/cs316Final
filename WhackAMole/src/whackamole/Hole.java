@@ -1,6 +1,6 @@
 package whackamole;
 
-public abtract class Hole {
-    public int roll();
-    public void showObject();
+public abstract class Hole {
+    public abstract int roll();
+    public abstract int showObject();
 }

@@ -1,5 +1,7 @@
 package whackamole;
 
+import java.util.Random;
+
 public class SpecialMole extends Mole {
 
     public SpecialMole() {
@@ -7,11 +9,17 @@ public class SpecialMole extends Mole {
 
     @Override
     public int roll() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        /*int n = (int) Math.ceil((Math.random() * 100));
+        return n;*/
+        Random random = new Random();
+        int n = random.nextInt(10);
+        return n;
     }
 
     @Override
-    public void showObject() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int showObject() {
+        Random random = new Random();
+        int n = random.nextInt(9);
+        return n;
     }
 }

@@ -1,19 +1,17 @@
 package whackamole;
 
 public class GameStructure {
+    Bomb b = new Bomb(); 
+    Mole m = new Mole();
 
-    // default seconds in game
-    protected int time;
-
-    // default overload, default time = 60
+    public int mRoll;
+    public int bRoll;
+    
     public GameStructure() {
-        this.time = 60;
     }
 
-    // overload allows custom time
-    // used for change of difficulty
-    // of game
-    public GameStructure(int time) {
-        this.time = time;
+    public void startGame() {
+        this.mRoll = m.roll();
+        this.bRoll = b.roll();
     }
 }

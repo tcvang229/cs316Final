@@ -1,13 +1,25 @@
 package whackamole;
 
+import java.util.Random;
+
 public class Bomb extends Hole {
 
-    @Override
-    public int roll() {
-        return 5;
+    public Bomb() {
     }
 
     @Override
-    public void showObject() {
+    public int roll() {
+        /*int n = (int) Math.ceil((Math.random() * 100));
+        return n;*/
+        Random random = new Random();
+        int n = random.nextInt(10);
+        return n;
+    }
+
+    @Override
+    public int showObject() {
+        Random random = new Random();
+        int n = random.nextInt(9);
+        return n;
     }
 }
