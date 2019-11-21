@@ -17,6 +17,8 @@ public class WhackAMoleController {
     private static final DecimalFormat FORMAT = new DecimalFormat("#");
     private static int score;
     private static int highScore;
+    static GameStructure test = new GameStructure();
+    static int testInt;
     
     //ImageView placeholders
     public static ImageView km = new ImageView();
@@ -39,11 +41,11 @@ public class WhackAMoleController {
     
     static final File SPEC_FILE = new File("src/spMole.png");
     static Image spMoleImage = new Image(SPEC_FILE.toURI().toString());
-       
+    
     
     @FXML
     private ImageView hole1_1;
-
+    
     @FXML
     private ImageView hole1_2;
 
@@ -308,39 +310,19 @@ public class WhackAMoleController {
     
     @FXML
     void onPauseButtonClick(ActionEvent event) {
-        
+        /* ADD ACTION */
     }
  
-    @FXML
-    void onStartButtonClick(ActionEvent event) {
+    //performs the rolls
+    public void testRolls(){
         
-        //Initialize holes and GameStructure
-        hole1_1.setImage(holeImage);
-        hole1_2.setImage(holeImage);
-        hole1_3.setImage(holeImage);
-        hole2_1.setImage(holeImage);
-        hole2_2.setImage(holeImage);
-        hole2_3.setImage(holeImage);
-        hole3_1.setImage(holeImage);
-        hole3_2.setImage(holeImage);
-        hole3_3.setImage(holeImage);
-        
-        //set the score to 0
-        score = 0;
-        scoreTextField.setText(FORMAT.format(score));
-        
-        //start the game
-        GameStructure test = new GameStructure();
-        test.startGame();
-           
-        //while (score < 50) {
-        int testInt = 0;
-        while (testInt < 50) {  
+        testInt = 0;
+        while (testInt == 0) {  
         
             test.startGame();
             
             //mole appears
-            if (test.mRoll == 3 || test.mRoll == 4 || test.mRoll == 5) {
+            if (test.mRoll == 0 || test.mRoll == 1 || test.mRoll == 2) {
             	
                 int n = test.m.showObject();
                 
@@ -402,7 +384,7 @@ public class WhackAMoleController {
             }
             
             //bomb appears
-            if (test.bRoll == 1 || test.bRoll == 2) {
+            if (test.bRoll == 0 || test.bRoll == 1) {
             	
                 int n = test.b.showObject();
                 
@@ -523,16 +505,35 @@ public class WhackAMoleController {
                 TimerTask task = new Helper();
                 timer.schedule(task, 1000); //1 second  
                 
-                /*if(score >= highScore){
-                    highScoreTextField.setText(FORMAT.format(score));
-                }*/
-                
             }
-            
-            //score = 50;
-            testInt = 50;
+
+            testInt++;
             
         }
     }
+    
+    @FXML
+    void onStartButtonClick(ActionEvent event) {
+        
+        //Initialize holes and GameStructure
+        hole1_1.setImage(holeImage);
+        hole1_2.setImage(holeImage);
+        hole1_3.setImage(holeImage);
+        hole2_1.setImage(holeImage);
+        hole2_2.setImage(holeImage);
+        hole2_3.setImage(holeImage);
+        hole3_1.setImage(holeImage);
+        hole3_2.setImage(holeImage);
+        hole3_3.setImage(holeImage);
+        
+        //set the score to 0
+        score = 0;
+        scoreTextField.setText(FORMAT.format(score));
+        
+        //start the game
+        this.testRolls();
+        
+    }
 
+    
 }

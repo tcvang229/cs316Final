@@ -3,6 +3,8 @@ import java.util.TimerTask;
 
 public class Helper extends TimerTask{
 
+        WhackAMoleController controller = new WhackAMoleController();
+    
 	@Override
 	public void run() {
                 WhackAMoleController.km.setImage(WhackAMoleController.holeImage);
@@ -12,6 +14,8 @@ public class Helper extends TimerTask{
                 WhackAMoleController.bombIn = false;
                 WhackAMoleController.spMoleIn = false;
                 System.out.println("Timer Finished\n");
+                //controller.testRolls();
+                
 	}
         
 }

@@ -2,7 +2,7 @@ package whackamole;
 
 import java.util.Random;
 
-public class SpecialMole extends Mole {
+public class SpecialMole extends Hole {
 
     Random rand = new Random();
     final static int VALUE = 5;

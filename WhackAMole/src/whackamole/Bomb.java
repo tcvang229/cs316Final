@@ -12,7 +12,7 @@ public class Bomb extends Hole {
 
     @Override
     public int roll() {
-        int n = rand.nextInt(10);
+        int n = rand.nextInt(9);
         return n;
     }
 
