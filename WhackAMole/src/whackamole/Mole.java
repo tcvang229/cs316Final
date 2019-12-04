@@ -10,11 +10,11 @@ public class Mole extends Hole {
     public Mole() {
     }
 
-    @Override
+    /*@Override
     public int roll() {
         int n = rand.nextInt(9);
         return n;
-    }
+    }*/
 
     @Override
     public int showObject() {

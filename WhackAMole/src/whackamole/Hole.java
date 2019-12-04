@@ -1,6 +1,7 @@
 package whackamole;
 
 public abstract class Hole {
-    public abstract int roll();
+    // maybe just remove roll inheritence
+    //public abstract int roll();
     public abstract int showObject();
 }

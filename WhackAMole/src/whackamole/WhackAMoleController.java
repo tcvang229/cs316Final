@@ -322,11 +322,12 @@ public class WhackAMoleController {
             test.startGame();
             
             //mole appears
-            if (test.mRoll == 0 || test.mRoll == 1 || test.mRoll == 2) {
-            	
+            //if (test.mRoll == 0 || test.mRoll == 1 || test.mRoll == 2) {
+            if (test.roll < 5) {
                 int n = test.m.showObject();
                 
-                System.out.println("test.mRoll: " + test.mRoll);
+                System.out.println("test.mRoll: " + test.roll);
+                //System.out.println("HELLLLOOO");
                 System.out.println("hole(n): " + n);
   
                 switch (n) {
@@ -384,11 +385,12 @@ public class WhackAMoleController {
             }
             
             //bomb appears
-            if (test.bRoll == 0 || test.bRoll == 1) {
+            //if (test.bRoll == 0 || test.bRoll == 1) {
+            if (test.roll >= 5 && test.roll < 9) {
             	
                 int n = test.b.showObject();
                 
-                System.out.println("test.bRoll: " + test.bRoll);
+                System.out.println("test.bRoll: " + test.roll);
                 System.out.println("hole(n): " + n);
   
                 switch (n) {
@@ -446,11 +448,11 @@ public class WhackAMoleController {
             }
             
             //special mole appears
-            if (test.sRoll == 0) {
+            if (test.roll == 9) {
             	
                 int n = test.s.showObject();
                 
-                System.out.println("test.sRoll: " + test.sRoll);
+                System.out.println("test.sRoll: " + test.roll);
                 System.out.println("hole(n): " + n);
   
                 switch (n) {

@@ -10,11 +10,11 @@ public class Bomb extends Hole {
     public Bomb() {
     }
 
-    @Override
+    /*@Override
     public int roll() {
         int n = rand.nextInt(9);
         return n;
-    }
+    }*/
 
     @Override
     public int showObject() {
