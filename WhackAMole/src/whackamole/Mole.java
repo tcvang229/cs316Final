@@ -5,7 +5,7 @@ import java.util.Random;
 public class Mole extends Hole {
 
     Random rand = new Random();
-    final static int VALUE = 2;
+    final static int VALUE = 1;
     
     public Mole() {
     }

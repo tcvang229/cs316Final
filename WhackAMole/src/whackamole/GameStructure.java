@@ -17,7 +17,7 @@ public class GameStructure {
     }
 
     public void startGame() {
-        this.roll = rand.nextInt(9);
+        this.roll = rand.nextInt(10);
         /*this.mRoll = m.roll();
         this.bRoll = b.roll();
         this.sRoll = s.roll();*/

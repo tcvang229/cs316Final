@@ -5,7 +5,7 @@ import java.util.Random;
 public class Bomb extends Hole {
 
     Random rand = new Random();
-    final static int VALUE = -10;
+    final static int VALUE = 1;
     
     public Bomb() {
     }

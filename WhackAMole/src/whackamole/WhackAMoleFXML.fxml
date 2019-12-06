@@ -34,52 +34,52 @@
          <children>
             <ImageView fx:id="hole1_1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <image>
-                  <Image url="@../../../../hole.png" />
+                  <Image url="@../hole.png" />
                </image>
             </ImageView>
             <ImageView fx:id="hole1_2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <image>
-                  <Image url="@../../../../hole.png" />
+                  <Image url="@../hole.png" />
                </image>
             </ImageView>
             <ImageView fx:id="hole3_1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
                <image>
-                  <Image url="@../../../../hole.png" />
+                  <Image url="@../hole.png" />
                </image>
             </ImageView>
             <ImageView fx:id="hole3_2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5">
                <image>
-                  <Image url="@../../../../hole.png" />
+                  <Image url="@../hole.png" />
                </image>
             </ImageView>
             <ImageView fx:id="hole1_3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <image>
-                  <Image url="@../../../../hole.png" />
+                  <Image url="@../hole.png" />
                </image>
             </ImageView>
             <ImageView fx:id="hole3_3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="5">
                <image>
-                  <Image url="@../../../../hole.png" />
+                  <Image url="@../hole.png" />
                </image>
             </ImageView>
             <ImageView fx:id="hole2_1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <image>
-                  <Image url="@../../../../hole.png" />
+                  <Image url="@../hole.png" />
                </image>
             </ImageView>
             <ImageView fx:id="hole2_2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <image>
-                  <Image url="@../../../../hole.png" />
+                  <Image url="@../hole.png" />
                </image>
             </ImageView>
             <ImageView fx:id="hole2_3" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <image>
-                  <Image url="@../../../../hole.png" />
+                  <Image url="@../hole.png" />
                </image>
             </ImageView>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <children>
-                  <Button fx:id="pauseButton" mnemonicParsing="false" onAction="#onPauseButtonClick" text="Pause" />
+                  <Button fx:id="pauseButton" mnemonicParsing="false" onAction="#onPauseButtonClick" opacity="0.0" text="Pause" />
                </children>
             </HBox>
             <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
@@ -95,7 +95,7 @@
                </children>
             </GridPane>
             <Button mnemonicParsing="false" onAction="#onHole1_1Clicked" opacity="0.0" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
-            <GridPane GridPane.columnIndex="2" GridPane.rowIndex="6">
+            <GridPane GridPane.columnIndex="3" GridPane.rowIndex="6">
               <columnConstraints>
                 <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
                 <ColumnConstraints hgrow="SOMETIMES" />
@@ -142,6 +142,16 @@
             <Button mnemonicParsing="false" onAction="#onHole3_1Clicked" opacity="0.0" prefHeight="146.0" prefWidth="198.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <Button mnemonicParsing="false" onAction="#onHole3_2Clicked" opacity="0.0" prefHeight="146.0" prefWidth="268.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
             <Button mnemonicParsing="false" onAction="#onHole3_3Clicked" opacity="0.0" prefHeight="146.0" prefWidth="197.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <HBox alignment="CENTER" spacing="10.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#on10secClicked" text="10sec" />
+                  <Button mnemonicParsing="false" onAction="#on30secClicked" text="30sec" />
+                  <Button mnemonicParsing="false" onAction="#on60secClicked" text="60sec" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
          </children>
       </GridPane>
    </children>
