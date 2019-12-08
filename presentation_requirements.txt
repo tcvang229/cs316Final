@@ -1,0 +1,28 @@
+-whackamole presentation-
+
+1.) DEMO (5-6min)
+a) functionality
+b) user's perspective
+
+
+2) REFLECTION: (4-5min)
+a) role
+b) what's new?
+c) what were the changes in requirement or design?
+
+
+3.) what are the challenges? how we overcame?
+
+
+4) Q&A (2mins)
+
+
+5) Submit code early if we want to use computer in classroom
+
+-----------------------------------------------------------------------------------------------------------------------------------
+GRADED ON:
+1) all students must speak, can't be passive. (presentation)
+
+2) significance of code, inheritance, polymorphism, contents, etc 
+
+3) peer review: grade your team members , give A's we all tryna reach the finish line.
