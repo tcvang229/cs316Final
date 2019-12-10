@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-background-color: green; -fx-border-color: black;" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="whackamole.WhackAMoleController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" style="-fx-background-color: green; -fx-border-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="whackamole.WhackAMoleController">
    <children>
       <GridPane layoutX="10.0" layoutY="10.0" style="-fx-background-color: green;">
          <columnConstraints>
@@ -100,14 +100,6 @@
                 <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
                 <ColumnConstraints hgrow="SOMETIMES" />
               </columnConstraints>
-               <children>
-                  <TextField fx:id="highScoreTextField" editable="false" focusTraversable="false" promptText="0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5">
-                     <GridPane.margin>
-                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                     </GridPane.margin>
-                  </TextField>
-                  <Label text="High Score:" textFill="WHITE" GridPane.rowIndex="5" />
-               </children>
                <rowConstraints>
                   <RowConstraints />
                   <RowConstraints />

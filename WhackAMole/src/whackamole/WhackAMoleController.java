@@ -476,7 +476,7 @@ public class WhackAMoleController {
         scoreTextField.setText(FORMAT.format(score));
 
         //start the game
-        this.highScoreTextField.setText("HELLO WORLD");
+    
         this.testRolls();
     }
     
