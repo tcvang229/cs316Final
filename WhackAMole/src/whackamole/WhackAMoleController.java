@@ -86,7 +86,6 @@ public class WhackAMoleController {
 
     @FXML
     void onHole1_1Clicked(ActionEvent event) {
-
         this.hole1_1.setImage(holeImage);
 
         if (moleIn && n == 0) {
@@ -477,6 +476,7 @@ public class WhackAMoleController {
         scoreTextField.setText(FORMAT.format(score));
 
         //start the game
+        this.highScoreTextField.setText("HELLO WORLD");
         this.testRolls();
     }
     
@@ -504,8 +504,9 @@ public class WhackAMoleController {
     
     //performs the rolls
     public void testRolls() {
-
-        if (test.roll < 5) {
+    	test.myRoll();
+    	
+        if (test.roll < 7) {
             n = test.m.showObject();
             System.out.println("test.mRoll: " + test.roll);
             System.out.println("hole(n): " + n + "\n");
@@ -560,7 +561,7 @@ public class WhackAMoleController {
         }
 
         //bomb appears
-        if (test.roll >= 5 && test.roll < 9) {
+        /*if (test.roll >= 5 && test.roll < 9) {
             n = test.b.showObject();
             System.out.println("test.bRoll: " + test.roll);
             System.out.println("hole(n): " + n + "\n");
@@ -612,10 +613,10 @@ public class WhackAMoleController {
                     kb = hole3_3;
                     break;
             }
-        }
+        }*/
 
         //special mole appears
-        if (test.roll >= 9) {
+        if (test.roll >= 7) {
             n = test.s.showObject();
             System.out.println("test.sRoll: " + test.roll);
             System.out.println("hole(n): " + n + "\n");
